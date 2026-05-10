@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,35 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jersey+10&display=swap" rel="stylesheet">
     <script src="static/jss/script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div>
             <img src="/static/imgs/location-dot-solid-full (1).svg" alt="">
             <h2>TripPlanner+</h2>
         </div>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/trips.html">My Trips</a>
-            <a href="/weather.html">Weather</a>
-            <a href="/suggestions.html">Suggestions</a>
-            <a href="/about.html">About</a>
-        </nav>
+        <div class="dropdown">
+            <img src="/static/imgs/bars-solid-full (1).svg" alt="Menu" id="menu-icon" class="menu-icon">
+            <nav id="dropdown-menu" class="dropdown-content">
+                <a href="/index.html">Home</a>
+                <a href="/trips.html">My Trips</a>
+                <a href="/weather.html">Weather</a>
+                <a href="/about.html">About</a>
+            </nav>
+        </div>
     </header>
     <main>
         <div id="introduction">
             <div>
                 <h1>Plan your next adventature</h1>
                 <p>
-                    Create, plan and save trips, check the weather, and get <br> AI-powered destination ideas - all in one place.
+                    Create, plan and save trips, check the weather, and get <br> AI-powered destination ideas - all in
+                    one place.
                 </p>
                 <nav>
                     <a href="trips.html">
@@ -41,10 +46,38 @@
                 </nav>
             </div>
         </div>
+        <h1 id="top">Everything you need for your trip</h1>
+        <div id="features-grid">
+            <div class="feature-card">
+                <h3>Trip Management</h3>
+                <p>
+                    Create, edit, and organise all your trips in one place
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    Daily activities
+                </h3>
+                <p>
+                    Add activities day by day and keep your schedule tight
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    Weather check
+                </h3>
+                <p>Live weather for your destination via OpenWeatherMap</p>
+            </div>
+            <div class="feature-card">
+                <h3>AI suggestions</h3>
+                <p>Chat with Gemini for destination and activity ideas</p>
+            </div>
+        </div>
 
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

@@ -1,14 +1,15 @@
-:root{
+:root {
     --primary: #8CCFDA;
     --secondary: #77878A;
     --ternary: #EEFAFC;
 }
-#introduction{
+
+#introduction {
     width: 90%;
     height: 60vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/static/imgs/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/static/imgs/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 40px;
@@ -16,10 +17,31 @@
     text-align: center;
 
 }
-#introduction button{
+
+#introduction button {
     border-radius: 10px;
     background-color: var(--ternary);
 }
-#introduction nav{
+
+#introduction nav {
     gap: 2rem;
+}
+
+#features-grid {
+    width: 80%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: var(--primary);
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+#top {
+    margin-top: 2rem;
 }
