@@ -15,6 +15,10 @@
     border-radius: 40px;
     justify-content: center;
     text-align: center;
+        box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.06),
+        0 8px 24px rgba(0, 0, 0, 0.10);
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
 
 }
 
@@ -36,10 +40,26 @@
 }
 
 .feature-card {
-    background-color: var(--primary);
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
     border-radius: 15px;
     padding: 2.5rem;
     text-align: center;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.06),
+        0 8px 24px rgba(0, 0, 0, 0.10);
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
 #top {
