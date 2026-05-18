@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jersey+10&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="static/jss/script.js" defer></script>
+    <script src="static/jss/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="/static/imgs/location-dot-solid-full (1).svg" alt="">
+            <h2>TripPlanner+</h2>
+        </div>
+        <div class="dropdown">
+            <img src="/static/imgs/bars-solid-full (1).svg" alt="Menu" id="menu-icon" class="menu-icon">
+            <nav id="dropdown-menu" class="dropdown-content">
+                <a href="/index.html">Home</a>
+                <a href="/trips.html">My Trips</a>
+                <a href="/weather.html">Weather</a>
+                <a href="/about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter a city...">
+            <button id="search-btn"><img src="/static/imgs/magnifying-glass-solid-full.svg" alt=""></button>
+        </div>
+        <div id="error-card" class="error-card hidden">
+            <img src="/static/imgs/xmark-solid-full.svg" alt="Not found" class="error-xmark">
+            <p class="error-card-text">Destination not found</p>
+        </div>
+    <div id="weather-result">
+        <div class="weather-card">
+            <div class="weather-card-header">
+                <span>Current weather</span>
+                <span id="current-time"></span>
+            </div>
+            <div class="weather-card-main">
+                <div class="weather-main-left">
+                    <img id="weather-icon" src="" alt="">
+                    <div>
+                        <div id="temp" class="weather-temp"></div>
+                        <div id="description" class="weather-desc"></div>
+                    </div>
+                </div>
+                <div class="weather-main-right">
+                    <span>Feels like <span id="feels"></span></span>
+                    <span id="city-name"></span>
+                </div>
+            </div>
+            <div class="weather-card-details">
+                <div class="detail-row">
+                    <span>Wind</span><span id="wind"></span>
+                    <span>Humidity</span><span id="humidity"></span>
+                </div>
+                <div class="detail-row">
+                    <span>Pressure</span><span id="pressure"></span>
+                    <span>Visibility</span><span id="visibility"></span>
+                </div>
+                <div class="detail-row">
+                    <span>Min / Max</span><span id="minmax"></span>
+                    <span>Cloud cover</span><span id="clouds"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <hr/>
+        <nav id="nav-footer">
+            <a href="/about.html"><img src="/static/imgs/instagram-brands-solid-full.svg" alt=""></a>
+            <a href="/about.html"><img src="/static/imgs/tiktok-brands-solid-full.svg" alt=""></a>
+            <a href="/about.html"><img src="/static/imgs/facebook-brands-solid-full.svg" alt=""></a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
